@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBJECT"
+            android:textColor="#FF03DAC5"
+            android:textStyle="bold"
+            android:textSize="19dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/spinsubject">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstNumberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:text="Midterm:"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:text="Finals:"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCompute"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="COMPUTE:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="#FF03DAC5"/>
+
+        <TextView
+            android:id="@+id/etresult"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:background="#FF03DAC5"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondNumberLayout"
+        android:layout_width="502dp"
+        android:layout_height="593dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="130dp"
+            android:id="@+id/etMidTerm"/>
+
+        <EditText
+            android:id="@+id/etfinals"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="20dp"
+       android:textStyle="bold"
+       android:layout_marginTop="400dp"
+       android:text="VieW"
+       android:textColor="#FF03DAC5"
+       android:id="@+id/btnView"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="564dp"
+            android:text="Made by Adrian Gaile Pedrezuela "
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
